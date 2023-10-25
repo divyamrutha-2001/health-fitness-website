@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vibrant Living</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Varela+Round" />
+  <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+  <link rel="stylesheet" href="{% static 'css/fitnessworkouts.css' %}">
+</head>
+
+<body>
+  <div class="topnav">
+    <!-- <a href="contactus.html"> Contact Us </a> -->
+    <a href="{% url 'logout' %}"> Logout </a>
+    <a class="active" href="#"> Fitness </a>
+    <a href="{% url 'dashboard' %}"> Dashboard </a>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col cust-container" id="wr">
+        <p class="box-heading"><a href="https://www.youtube.com/watch?v=j6C-6F6dr-4" target="_blank">WARM UP <br/> ROUTINE</a></p>
+      </div>
+
+      <div class="col cust-container" id="ta">
+        <p class="box-heading"><a href="https://www.youtube.com/watch?v=iN-AEOs9rzc" target="_blank">TONED <br/> ARMS</a></p>
+      </div>
+
+      <div class="col cust-container" id="fs">
+        <p class="box-heading"><a href="https://www.youtube.com/watch?v=fWdbo0i8v9g" target="_blank">FLAT <br/> STOMACH</a></p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col cust-container" id="yc">
+        <p class="box-heading"><a href="https://www.youtube.com/channel/UCaBC9214yCFbAys53dE-IFw" target="_blank">YOGA <br/> CHALLENGE</a></p>
+      </div>
+
+      <div class="col cust-container" id="dw">
+        <p class="box-heading"><a href="https://www.youtube.com/channel/UCaeQiOlLDAl76NmWWFUlHbg" target="_blank">DANCE <br/> WORKOUTS</a></p>
+      </div>
+
+      <div class="col cust-container" id="cs">
+        <p class="box-heading"><a href="https://www.youtube.com/watch?v=tXWh-dowiLg" target="_blank">COOLDOWN <br/> STRECHES</a></p>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+
+</html>

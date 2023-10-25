@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vibrant Living</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Varela+Round" />
+  <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+  <link rel="stylesheet" href="{% static 'css/diet.css' %}">
+</head>
+
+<body>
+  <div class="topnav">
+
+    <a href="{% url 'logout' %}"> Logout </a>
+    <a class="active" href="#"> Diets </a>
+    <a href="{% url 'dashboard' %}"> Dashboard</a>
+    <a class="active" href="#"> {{request.user.username}} </a>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col cust-container" id="k">
+        <p class="box-heading"><a href="https://www.youtube.com/watch?v=zrRDnLJdjmQ" target="_blank">KETO <br/> DIET</a></p>
+      </div>
+
+      <div class="col cust-container" id="v">
+        <p class="box-heading"><a href="https://www.youtube.com/watch?v=nHDdBhwNjAQ" target="_blank">VEGAN <br/> DIET</a></p>
+      </div>
+
+      <div class="col cust-container" id="l">
+        <p class="box-heading"><a href="https://www.youtube.com/watch?v=NEuwcKks0Kw" target="_blank">LOW-CARB <br/> DIET</a></p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col cust-container" id="n">
+        <p class="box-heading"><a href="https://www.youtube.com/channel/UCkw6A6Zmand6UhZnIODLRcA" target="_blank">NATURAL <br/> DIET</a></p>
+      </div>
+
+      <div class="col cust-container" id="a">
+        <p class="box-heading"><a href="https://www.youtube.com/watch?v=JYv21zKp9w0" target="_blank">ATKINS <br/> DIET</a></p>
+      </div>
+
+      <div class="col cust-container" id="p">
+        <p class="box-heading"><a href="https://www.youtube.com/watch?v=w07W0D9z6v4" target="_blank">PALEO <br/> DIET</a></p>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+
+</html>
